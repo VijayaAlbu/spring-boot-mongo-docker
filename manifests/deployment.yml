@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: vijayaalbuspringbootmongodocker 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vijayaalbuspringbootmongodocker 
+    spec:
+      containers:
+        - name: vijayaalbuspringbootmongodocker 
+          image: acrvijaya.azurecr.io/vijayaalbuspringbootmongodocker
+          ports:
+          - containerPort: 80
